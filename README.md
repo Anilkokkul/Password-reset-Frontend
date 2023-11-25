@@ -30,4 +30,5 @@ This project is the frontend component for the password reset functionality in a
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/password-reset-frontend.git
+   git clone https://github.com/Anilkokkul/Password-reset-Frontend.git
+   ```
