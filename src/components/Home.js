@@ -8,7 +8,7 @@ function Home() {
 
   return (
     <>
-      <h1>Home Component</h1>
+      <h1 className="color">Password flow Reset</h1>
     </>
   );
 }

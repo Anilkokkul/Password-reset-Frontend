@@ -17,7 +17,6 @@ export const instance = axios.create({
 function App() {
   return (
     <div>
-      <h1 className="color">Password flow Reset</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/singUp" element={<SinghUp />} />
