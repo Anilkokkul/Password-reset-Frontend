@@ -4,7 +4,6 @@ import { useSearchParams } from "react-router-dom";
 import { ChangePasswordSchema } from "../Schemas/userValidationSchema";
 import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import Home from "./Home";
 import { instance } from "../App";
 import { errorToast, toastSuccess } from "../Services/toasts";
 
