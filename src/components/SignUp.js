@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import { instance } from "../App";
-// import { ToastContainer, toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
 import { registerSchema } from "../Schemas/userValidationSchema";
 import { errorToast, toastSuccess } from "../Services/toasts";
 
 const SinghUp = () => {
+  const navigate = useNavigate();
   const initialValues = {
     name: "",
     email: "",
@@ -24,7 +25,11 @@ const SinghUp = () => {
           .post("/register", values)
           .then(() => {
             toastSuccess("You have Successfully Registered");
+            setTimeout(function () {
+              navigate("/login");
+            }, 2000);
           })
+
           .catch((error) => {
             const errorMessage = error.response.data.message;
             errorToast(errorMessage);
@@ -35,8 +40,8 @@ const SinghUp = () => {
     });
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center w-100 bg-primary vh-100">
-        <div className="bg-white p-3 rounded  w-25 ">
+      <div className="d-flex justify-content-center align-items-center w-100 bg-primary vh-100 p-xs-5">
+        <div className="bg-white p-3 rounded col-xl-3 col-lg-4 col-md-5 col-sm-6">
           <h2 className="text-center">Register</h2>
           <form action="" onSubmit={handleSubmit}>
             <div className="m-3">

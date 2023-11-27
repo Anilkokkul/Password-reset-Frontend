@@ -8,6 +8,7 @@ import PasswordReset from "./components/PasswordReset";
 import ForgotPassword from "./components/ForgotPassword";
 import Home from "./components/Home";
 import { Routes, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
 
 export const instance = axios.create({
   withCredentials: true,
@@ -19,10 +20,11 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/singUp" element={<SinghUp />} />
+        <Route path="/signup" element={<SinghUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/reset-password" element={<PasswordReset />} />
+        <Route path="/resetPassword" element={<PasswordReset />} />
         <Route path="/reset" element={<ForgotPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );

@@ -1,34 +1,41 @@
 # Password Reset Flow Frontend
 
-## Overview
-
-This project is the frontend component for the password reset functionality in a web application. It provides a user interface for initiating and completing the password reset process.
+Welcome to Password Reset Flow App! This application provides a user-friendly interface for managing the password reset flow, ensuring a secure and efficient experience for our users.
 
 ## Features
 
-- **User-Friendly Interface**: Intuitive design for a seamless user experience.
-- **Password Reset Request Form**: Allow users to request a password reset via email.
-- **Token Verification Form**: Verify the received token and guide users through the password reset process.
-- **Password Update Form**: Provide a secure form for users to update their passwords.
+- **Intuitive Password Reset Flow**: Streamlined process for users to reset their passwords hassle-free.
+- **Secure Account Recovery**: Prioritizing the security of user accounts at every step of the password reset journey.
+- **User-Friendly Experience**: An intuitive and easy-to-navigate interface suitable for users of all technical levels.
+- **Swift Account Recovery**: Quick and efficient recovery to minimize disruptions to users' online activities.
+- **24/7 Support**: Dedicated support team available around the clock to assist with any questions or concerns.
 
-## Technologies Used
+## How It Works
 
-- **React**: JavaScript library for building user interfaces.
-- **React Router**: Declarative routing for React.js.
-- **Axios**: Promise-based HTTP client for making requests to the backend.
-- **Bootstrap**: Frontend framework for styling and layout.
+1. **Initiate Password Reset**
+
+   - Click on the "Forgot Password" link to start the password reset process.
+
+2. **Provide Your Information**
+
+   - Enter the email address or username associated with your account.
+
+3. **Verification**
+
+   - Securely verify your identity. Upon successful verification, you'll receive an email with further instructions.
+
+4. **Reset Your Password**
+
+   - Follow the link provided in the email to create a new, strong password for your account.
+
+5. **Success!**
+   - Congratulations! You've successfully reset your password. Use your new credentials to log in and access your account.
 
 ## Getting Started
 
-### Prerequisites
+To run the SecurePass Reset Frontend locally, follow these steps:
 
-- Node.js installed
-- Password Reset Backend API running
-
-### Installation
-
-1. Clone the repository:
-
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/Anilkokkul/Password-reset-Frontend.git
    ```

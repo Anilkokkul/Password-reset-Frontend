@@ -1,0 +1,10 @@
+* {
+  font-family: "gilroy";
+}
+
+@media (max-width: 450px) {
+  .mobile {
+    width: 80%;
+    height: auto;
+  }
+}
