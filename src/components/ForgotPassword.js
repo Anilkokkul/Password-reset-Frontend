@@ -54,6 +54,7 @@ const ForgotPassword = () => {
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
               ></input>
             </div>
             <button type="submit" className="btn btn-success rounded mt-3">
